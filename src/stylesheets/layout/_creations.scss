@@ -1,0 +1,407 @@
+//mobile
+$img1: "./../../images/mobile/image-deep-earth.jpg";
+$img2: "./../../images/mobile/image-night-arcade.jpg";
+$img3: "./../../images/mobile/image-soccer-team.jpg";
+$img4: "./../../images/mobile/image-grid.jpg";
+$img5: "./../../images/mobile/image-from-above.jpg";
+$img6: "./../../images/mobile/image-pocket-borealis.jpg";
+$img7: "./../../images/mobile/image-curiosity.jpg";
+$img8: "./../../images/mobile/image-fisheye.jpg";
+//desktop
+$img1Desk: "./../../images/desktop/image-deep-earth.jpg";
+$img2Desk: "./../../images/desktop/image-night-arcade.jpg";
+$img3Desk: "./../../images/desktop/image-soccer-team.jpg";
+$img4Desk: "./../../images/desktop/image-grid.jpg";
+$img5Desk: "./../../images/desktop/image-from-above.jpg";
+$img6Desk: "./../../images/desktop/image-pocket-borealis.jpg";
+$img7Desk: "./../../images/desktop/image-curiosity.jpg";
+$img8Desk: "./../../images/desktop/image-fisheye.jpg";
+
+.creations {
+  margin-bottom: 96px;
+  @include mq(xlarge) {
+    margin-bottom: 144px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    @include mq(xlarge) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+
+    @include mq(xlarge) {
+      margin-bottom: 4rem;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      justify-self: flex-start;
+    }
+  }
+
+  &__btn {
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    border: black solid 1px;
+    border-top: $very-dark-grey solid 2px;
+    order: 3;
+    width: max-content;
+    padding: 14px 36px;
+    margin-top: 28px;
+    @include mq(xlarge) {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      margin: 0;
+      justify-self: flex-end;
+      align-self: start;
+      padding: 12px 32px;
+    }
+    @include mq(xxxlarge) {
+      padding: 14px 36px;
+    }
+    @include mq(xwide) {
+      padding: 20px 48px;
+    }
+    @include on-event {
+      background: black;
+      color: white;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    @include mq(medium) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include mq(xlarge) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+    }
+    @include mq(xxxlarge) {
+      gap: 32px;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+    transition: all 5s ease-in-out;
+    @include on-event {
+      .creations__item-title {
+        color: black;
+      }
+    }
+
+    //LIST ITEMS
+    &--first {
+      background-image: url($img1); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img1);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img1);
+      }
+      @include mq(xlarge) {
+        background-image: url($img1Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img1Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img1Desk);
+        }
+      }
+    }
+
+    &--second {
+      background-image: url($img2); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img2);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img2);
+      }
+      @include mq(xlarge) {
+        background-image: url($img2Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img2Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img2Desk);
+        }
+      }
+    }
+
+    &--third {
+      background-image: url($img3); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img3);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img3);
+      }
+      @include mq(xlarge) {
+        background-image: url($img3Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img3Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img3Desk);
+        }
+      }
+    }
+
+    &--fourth {
+      background-image: url($img4); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img4);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img4);
+      }
+      @include mq(xlarge) {
+        background-image: url($img4Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img4Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img4Desk);
+        }
+      }
+    }
+
+    &--fifth {
+      background-image: url($img5); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img5);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img5);
+      }
+      @include mq(xlarge) {
+        background-image: url($img5Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img5Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img5Desk);
+        }
+      }
+    }
+
+    &--sixth {
+      background-image: url($img6); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img6);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img6);
+      }
+      @include mq(xlarge) {
+        background-image: url($img6Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img6Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img6Desk);
+        }
+      }
+    }
+
+    &--seventh {
+      background-image: url($img7); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img7);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img7);
+      }
+      @include mq(xlarge) {
+        background-image: url($img7Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img7Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img7Desk);
+        }
+      }
+    }
+
+    &--eighth {
+      background-image: url($img8); //fallback
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url($img8);
+      @include on-event {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+          ),
+          url($img8);
+      }
+      @include mq(xlarge) {
+        background-image: url($img8Desk); //fallback
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+          ),
+          url($img8Desk);
+        @include on-event {
+          background-image: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.75)
+            ),
+            url($img8Desk);
+        }
+      }
+    }
+  }
+
+  //for auto sizing
+  &__img {
+    visibility: hidden;
+    width: 100%;
+    height: auto;
+  }
+
+  &__item-title {
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    @include mq(xxxlarge) {
+      bottom: 40px;
+      left: 40px;
+    }
+  }
+}

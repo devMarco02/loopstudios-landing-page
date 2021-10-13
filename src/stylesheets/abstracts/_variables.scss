@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+//fonts
+$ff-primary: "Alata", sans-serif;
+$ff-secondary: "Josefin Sans", sans-serif;
+
+//colors
+$dark-grey: hsl(0, 0%, 55%);
+$very-dark-grey: hsl(0, 0%, 41%);
+
+///===BREAKPOINTS
+$breakpoints: (
+  //galaxy fold
+  xxxsmall: 320px,
+  xxsmall: 375px,
+  xsmall: 500px,
+  small: 650px,
+  medium: 768px,
+  large: 834px,
+  xlarge: 1024px,
+  xxlarge: 1200px,
+  xxxlarge: 1440px,
+  wide: 1600px,
+  xwide: 1920px,
+  xxwide: 2560px
+);

@@ -1,0 +1,60 @@
+.hero {
+  background-image: url("./../../images/mobile/image-hero.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @include mq(large) {
+    max-height: 650px;
+  }
+  @include mq(wide) {
+    max-height: 800px;
+  }
+  @include mq(xwide) {
+    max-height: 900px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(large) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__title-wrapper {
+    margin-top: 7.5vh;
+    padding: 1.5rem;
+    border: solid 2px white;
+    line-height: 0.95em;
+    @include mq(xsmall) {
+      padding: 2rem;
+      max-width: 480px;
+    }
+    @include mq(medium) {
+      padding: 2.5rem;
+      max-width: 580px;
+    }
+    @include mq(xlarge) {
+      padding: 2.5rem;
+      max-width: 600px;
+    }
+    @include mq(xxlarge) {
+      max-width: 640px;
+    }
+    @include mq(xxxlarge) {
+      padding: 2.8rem;
+      max-width: 660px;
+    }
+    @include mq(wide) {
+      padding: 3.5rem;
+      max-width: 770px;
+    }
+    @include mq(xwide) {
+      padding: 4.5rem;
+      max-width: 950px;
+    }
+  }
+}

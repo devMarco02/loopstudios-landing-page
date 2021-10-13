@@ -1,0 +1,69 @@
+.branding {
+  margin: 6rem 0;
+  @include mq(large) {
+    margin: 100px 0;
+  }
+  @include mq(xlarge) {
+    margin: 144px 0;
+  }
+  @include mq(xwide) {
+    margin: 192px 0;
+  }
+
+  &__container {
+    @include mq(medium) {
+      max-width: 600px !important;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+    @include mq(xlarge) {
+      width: 60%;
+      margin: 0;
+    }
+    @include mq(xxxlarge) {
+      width: 65%;
+      margin: 0;
+    }
+  }
+
+  &__text-container {
+    background: white;
+    @include mq(xlarge) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 410px;
+      padding: 40px 0 0 45px;
+    }
+    @include mq(xxlarge) {
+      width: 480px;
+      padding: 56px 0 0 56px;
+    }
+    @include mq(xxxlarge) {
+      width: 564px;
+      padding: 88px 0 0 88px;
+    }
+    @include mq(xwide) {
+      width: 768px;
+      padding: 124px 0 0 124px;
+    }
+  }
+
+  &__info {
+    padding: 0 1rem;
+    @include mq(xlarge) {
+      padding: 0;
+      margin: 16px 0 0;
+    }
+    @include mq(xxlarge) {
+      margin: 24px 0 0;
+    }
+    @include mq(xxxlarge) {
+      margin: 32px 0 0;
+    }
+  }
+}

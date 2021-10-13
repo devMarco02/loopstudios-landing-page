@@ -1,0 +1,181 @@
+body {
+  color: white;
+  font-size: 15px;
+  font-family: $ff-primary;
+  font-weight: 400;
+  @include mq(xxxlarge) {
+    font-size: 1rem;
+  }
+  @include mq(xwide) {
+    font-size: 1.35rem;
+  }
+}
+
+a {
+  color: white;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: black;
+  font-family: $ff-secondary;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1em;
+  font-weight: 300;
+
+  @include mq(small) {
+    font-size: 2.6rem;
+  }
+  @include mq(medium) {
+    font-size: 2.75rem;
+  }
+  @include mq(xlarge) {
+    font-size: 2.25rem;
+  }
+  @include mq(xxlarge) {
+    font-size: 2.5rem;
+  }
+  @include mq(xxxlarge) {
+    font-size: 3.5rem;
+  }
+  @include mq(xwide) {
+    font-size: 4.5rem;
+  }
+}
+
+.nav {
+  text-transform: uppercase;
+  font-family: $ff-secondary;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1em;
+  @include mq(small) {
+    font-size: 1.8rem;
+  }
+  @include mq(large) {
+    font-family: $ff-primary;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  @include mq(wide) {
+    font-size: 1.1rem;
+  }
+  @include mq(xwide) {
+    font-size: 1.2rem;
+  }
+  @include mq(xxwide) {
+    font-size: 1.4rem;
+  }
+}
+
+.hero {
+  &__title {
+    font-family: $ff-secondary;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 0.95em;
+
+    @include mq(xxxsmall) {
+      font-size: 2rem;
+    }
+    @include mq(xxsmall) {
+      font-size: 2.5rem;
+    }
+    @include mq(xsmall) {
+      font-size: 3.25rem;
+    }
+    @include mq(medium) {
+      font-size: 4rem;
+    }
+    @include mq(xlarge) {
+      font-size: 4rem;
+    }
+    @include mq(xxlarge) {
+      font-size: 4.5rem;
+    }
+    @include mq(xxxlarge) {
+      font-size: 4.5rem;
+    }
+    @include mq(wide) {
+      font-size: 5.5rem;
+    }
+    @include mq(xwide) {
+      font-size: 6.5rem;
+    }
+  }
+}
+
+.branding {
+  &__text-container {
+    color: $dark-grey;
+    text-align: center;
+    @include mq(xlarge) {
+      text-align: start;
+    }
+  }
+
+  &__info {
+    line-height: 1.8em;
+  }
+}
+
+.creations {
+  text-transform: uppercase;
+
+  &__title {
+    text-align: center;
+    @include mq(xlarge) {
+      text-align: start;
+    }
+  }
+
+  &__item-title {
+    font-family: $ff-secondary;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1em;
+    opacity: 0.9;
+    @include mq(xxxlarge) {
+      font-size: 32px;
+    }
+  }
+
+  &__btn {
+    letter-spacing: 0.4em;
+    font-size: 14px;
+    line-height: 1em;
+    font-weight: 400;
+    @include mq(xwide) {
+      font-size: 20px;
+    }
+  }
+}
+
+.footer {
+  &__link {
+    line-height: 0.9em;
+    @include mq(xlarge) {
+      line-height: 1.5em;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+    text-align: center;
+    color: $dark-grey;
+    @include mq(xlarge) {
+      text-align: end;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
