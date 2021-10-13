@@ -704,6 +704,7 @@ button {
   background: white;
 }
 .nav__btn {
+  cursor: pointer;
   position: relative;
   z-index: 100;
 }

@@ -101,6 +101,7 @@
   }
 
   &__btn {
+    cursor: pointer;
     position: relative;
     z-index: 100;
     @include mq(large) {
